@@ -344,10 +344,21 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 form">
                             <h3>Newsletter</h3>
-                            <form>
-                                <input type="email" placeholder="Email">
-                                <input type="submit">
-                            </form>
+                            <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
